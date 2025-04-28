@@ -1,0 +1,1 @@
+require('huggepugge.plugins.monocle')

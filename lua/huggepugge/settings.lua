@@ -11,6 +11,15 @@ vim.opt.relativenumber = true
 
 -- Lines
 vim.opt.cursorline = true
+vim.opt.colorcolumn = '80'
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = 'netrw',
+	callback = function()
+		vim.opt_local.colorcolumn = ''
+	end,
+})
+
+-- Scrolling
 vim.opt.scrolloff = 10
 
 -- Highlight search

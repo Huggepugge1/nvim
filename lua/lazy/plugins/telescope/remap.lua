@@ -11,3 +11,6 @@ remap("<leader>sd", builtin.diagnostics, '[S]earch [D]iagnonstics')
 
 -- Keymaps
 remap("<leader>sk", builtin.keymaps, '[S]earch [K]eymaps')
+
+-- Help
+remap("<leader>sh", builtin.help_tags, '[S]earch [H]elp')
